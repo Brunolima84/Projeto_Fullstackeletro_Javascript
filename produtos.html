@@ -28,18 +28,18 @@
     <section class="categorias">
         <h3>Categorias</h3>
         <ul>
-            <li onclick="exibir_produtos('geladeira')"> Geladeiras (4) </li>
-            <li onclick="exibir_produtos('fogao')"> Fogões (4)</li>
-            <li onclick="exibir_produtos('microondas')"> Microondas (3)</li>
-            <li onclick="exibir_produtos('lavaRoupas')"> Lavadora de Roupas (2)</li>
-            <li onclick="exibir_produtos('lava_loucas')"> Lava-Louças (3) </li>
+            <li onclick="exibir_eletro('geladeira')"> Geladeiras (4) </li>
+            <li onclick="exibir_eletro('fogao')"> Fogões (4)</li>
+            <li onclick="exibir_eletro('microondas')"> Microondas (3)</li>
+            <li onclick="exibir_eletro('lavaroupas')"> Lavadora de Roupas (2)</li>
+            <li onclick="exibir_eletro('lavaloucas')"> Lava-Louças (3) </li>
         </ul>
-    </section>
+    </section>.
 
 
     <!-- Inicio da div de imagens produtos -->
     <section class="produtos">
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="geladeira" style="display: block;">
             <img src="./_imagens/_geladeira/refrigerador-brastemp-side-.webp" width="120px"
                 alt="Geladeira Brastemp Frost Free Side 500 litros" onclick="aumentar_imagem()">
             <br>
@@ -49,7 +49,7 @@
             <p class="preco">Por R$ 3.100,00 </p>
         </div>
 
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="geladeira" style="display: block;">
             <img src="./_imagens/_geladeira/geladeira_frostfree.webp" width="120px"
                 alt="Geladeira Electrolux Frost Free Side 350 litros Preço Promocional" onclick="exibir_produtos()">
             <br>
@@ -59,7 +59,7 @@
             <p class="preco">Por R$ 3.100,00 </p>
         </div>
 
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="geladeira" style="display: block;">
             <img src="./_imagens/_geladeira/refrigerador-brastemp.jpg" width="120px"
                 alt="Geladeira Electrolux Frost Free Side 450 litros Preço Promocional" onclick="exibir_produtos()">
             <br>
@@ -69,7 +69,7 @@
             <p class="preco">Por R$ 3.000,00 </p>
         </div>
 
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="geladeira" style="display: block;">
             <img src="./_imagens/_geladeira/refrigerador-brastemp-side-inverse-bro80ak-com-ice-maker-evox-540l.webp"
                 width="120px" alt="Geladeira Brastemp Frost Free Side 500 litros" onclick="exibir_produtos()" >
             <br>
@@ -79,7 +79,7 @@
             <p class="preco">Por R$ 3.300,00 </p>
         </div>
 
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="fogao" style="display: block;">
             <img src="./_imagens/_fogao/fogao-brastemp-5-bocas-bfs5vce-com-mesa-de-vidro-e-turbo-chama-preto.webp"
                 width="120px" alt="Fogão Consul 5 Bocas CFS5VAR com Mesa de Vidro - Inox" onclick="exibir_produtos()">
             <br>
@@ -89,7 +89,7 @@
             <p class="preco">Por R$ 499,00 </p>
         </div>
 
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="fogao" style="display: block;">
             <img src="./_imagens/_fogao/fogao-brastemp-5.webp" width="120px"
                 alt="Fogão Atlas 5 Bocas Mônaco, Automático, Forno Limpa Fácil" onclick="exibir_produtos()">
             <br>
@@ -100,7 +100,7 @@
         </div>
 
 
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="fogao" style="display: block;">
             <img src="./_imagens/_fogao/fogao4bocas.jpg" width="120px"
                 alt="Fogão Atlas 4 Bocas Brastemp Automático com Forno Limpa Fácil" onclick="exibir_produtos()">
             <br>
@@ -111,7 +111,7 @@
         </div>
 
 
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="fogao" style="display: block;">
             <img src="./_imagens/_fogao/fogao4bocaseletro.webp" width="120px"
                 alt="Fogão Atlas 4 Bocas Eletrolux Automático com Forno Limpa Fácil" onclick="exibir_produtos()">
             <br>
@@ -121,7 +121,7 @@
             <p class="preco">Por R$ 399,00</p>
         </div>
 
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="microondas" style="display: block;">
             <img src="./_imagens/_microondas/microondaspanasonic21litros.webp" width="120px"
                 alt="Micro-ondas Panasonic NN-ST27JWRUN 21 Litros Painel Digital Porta Espelhada" onclick="exibir_produtos()">
             <br>
@@ -132,7 +132,7 @@
             <p class="preco">Por R$ 579,90</p>
         </div>
 
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="microondas" style="display: block;">
             <img src="./_imagens/_microondas/microondaseletrolux27litros.webp" width="120px"
                 alt="Micro-Ondas Electrolux 27L com 55 Receitas pré-programadas no Menu Onlin" onclick="exibir_produtos()">
             <br>
@@ -143,7 +143,7 @@
             <p class="preco">Por R$ 639,00</p>
         </div>
 
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="microondas" style="display: block;">
             <img src="./_imagens/_microondas/microondaseletrolux20litros.webp" width="120px"
                 alt="Micro-ondas Electrolux 20 Litros com 10 Níveis de Potência" onclick="exibir_produtos()">
             <br>
@@ -154,7 +154,7 @@
         </div>
 
 
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="lavaroupas" style="display: block;">
             <img src="./_imagens/_lavaroupa/lavaroupaphilco12kg.webp" width="120px"
                 alt="Lavadora Philco PLR12B 12KG - 110V - Preço Promocional " onclick="exibir_produtos()">
             <br>
@@ -164,7 +164,7 @@
             <p class="preco">Por R$ 3.099,90 </p>
         </div>
 
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="lavaroupas" style="display: block;">
             <img src="./_imagens/_lavaroupa/lavaroupaeletrolux11kg.webp" width="120px"
                 alt="Lavadora de Roupas Electrolux 11Kg LES11 Essencial Care – Branca " onclick="exibir_produtos()">
             <br>
@@ -175,7 +175,7 @@
         </div>
 
 
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="lavaloucas" style="display: block;">
             <img src="./_imagens/_lavalouca/lavaloucaeletrolux14funcoes.webp" width="120px"
                 alt="Lava-Louças Electrolux LV14X 14Serviços com Display Digital - Inox " onclick="exibir_produtos()">
             <br>
@@ -186,7 +186,7 @@
         </div>
 
 
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="lavaloucas" style="display: block;">
             <img src="./_imagens/_lavalouca/lavalouca8funcoes.webp" width="120px"
                 alt="Lava-louças Brastemp BLF08AS Ative! 8 Serviços " onclick="exibir_produtos()">
             <br>
@@ -196,7 +196,7 @@
             <p class="preco">Por R$ 1.979,00 </p>
         </div>
 
-        <div class="fotos_produtos">
+        <div class="fotos_produtos" id="lavaloucas" style="display: block;">
             <img src="./_imagens/_lavalouca/lavaloucaeletrolux10funcoes.webp" width="120px"
                 alt="Lava-Louças Electrolux LV10X 10Serviços com Display Digital " onclick="exibir_produtos()">
             <br>
