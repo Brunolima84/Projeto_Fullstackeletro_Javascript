@@ -9,5 +9,25 @@ function exibir_eletro(produtos) {
         else
         itens[i].style = "display:none";
     }
+}
+function exibir_todos (produtos){  
+let itens = document.getElementsByClassName('fotos_produtos');
+for (let i = 0; i < itens.length; i++) {   
+    itens[i].style = "display:block";
+    
+}
+}
+function exibir_produtos(img){
+    if ( img.width == 120){
+        img.width= 200;  
+    }
+    else {
+        img.width = 120
+    }
+          
+    
+    
+
+
 
 }

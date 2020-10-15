@@ -28,6 +28,7 @@
     <section class="categorias">
         <h3>Categorias</h3>
         <ul>
+            <li onclick="exibir_todos('global')"> Todos os Produtos </li>
             <li onclick="exibir_eletro('geladeira')"> Geladeiras (4) </li>
             <li onclick="exibir_eletro('fogao')"> Fogões (4)</li>
             <li onclick="exibir_eletro('microondas')"> Microondas (3)</li>
@@ -41,7 +42,7 @@
     <section class="produtos">
         <div class="fotos_produtos" id="geladeira" style="display: block;">
             <img src="./_imagens/_geladeira/refrigerador-brastemp-side-.webp" width="120px"
-                alt="Geladeira Brastemp Frost Free Side 500 litros" onclick="aumentar_imagem()">
+                alt="Geladeira Brastemp Frost Free Side 500 litros" onclick="exibir_produtos(this)">
             <br>
             <p class="descricao"> Geladeira Brastemp Frost Free Side 500 litros </p>
             <hr>
@@ -51,7 +52,7 @@
 
         <div class="fotos_produtos" id="geladeira" style="display: block;">
             <img src="./_imagens/_geladeira/geladeira_frostfree.webp" width="120px"
-                alt="Geladeira Electrolux Frost Free Side 350 litros Preço Promocional" onclick="exibir_produtos()">
+                alt="Geladeira Electrolux Frost Free Side 350 litros Preço Promocional" onclick="exibir_produtos(this)">
             <br>
             <p class="descricao"> Geladeira Electrolux Frost Free Side 350 litros Preço Promocional </p>
             <hr>
@@ -61,7 +62,7 @@
 
         <div class="fotos_produtos" id="geladeira" style="display: block;">
             <img src="./_imagens/_geladeira/refrigerador-brastemp.jpg" width="120px"
-                alt="Geladeira Electrolux Frost Free Side 450 litros Preço Promocional" onclick="exibir_produtos()">
+                alt="Geladeira Electrolux Frost Free Side 450 litros Preço Promocional" onclick="exibir_produtos(this)">
             <br>
             <p class="descricao"> Geladeira Electrolux Frost Free Side 450 litros Preço Promocional </p>
             <hr>
@@ -71,7 +72,7 @@
 
         <div class="fotos_produtos" id="geladeira" style="display: block;">
             <img src="./_imagens/_geladeira/refrigerador-brastemp-side-inverse-bro80ak-com-ice-maker-evox-540l.webp"
-                width="120px" alt="Geladeira Brastemp Frost Free Side 500 litros" onclick="exibir_produtos()" >
+                width="120px" alt="Geladeira Brastemp Frost Free Side 500 litros" onclick="exibir_produtos(this)" >
             <br>
             <p class="descricao"> Geladeira Brastemp Frost Free Side 500 litros </p>
             <hr>
@@ -81,7 +82,7 @@
 
         <div class="fotos_produtos" id="fogao" style="display: block;">
             <img src="./_imagens/_fogao/fogao-brastemp-5-bocas-bfs5vce-com-mesa-de-vidro-e-turbo-chama-preto.webp"
-                width="120px" alt="Fogão Consul 5 Bocas CFS5VAR com Mesa de Vidro - Inox" onclick="exibir_produtos()">
+                width="120px" alt="Fogão Consul 5 Bocas CFS5VAR com Mesa de Vidro - Inox" onclick="exibir_produtos(this)">
             <br>
             <p class="descricao"> Fogão Consul 5 Bocas CFS5VAR com Mesa de Vidro - Inox </p>
             <hr>
@@ -91,7 +92,7 @@
 
         <div class="fotos_produtos" id="fogao" style="display: block;">
             <img src="./_imagens/_fogao/fogao-brastemp-5.webp" width="120px"
-                alt="Fogão Atlas 5 Bocas Mônaco, Automático, Forno Limpa Fácil" onclick="exibir_produtos()">
+                alt="Fogão Atlas 5 Bocas Mônaco, Automático, Forno Limpa Fácil" onclick="exibir_produtos(this)">
             <br>
             <p class="descricao"> Fogão Atlas 5 Bocas Mônaco, Automático, Forno Limpa Fácil </p>
             <hr>
@@ -102,7 +103,7 @@
 
         <div class="fotos_produtos" id="fogao" style="display: block;">
             <img src="./_imagens/_fogao/fogao4bocas.jpg" width="120px"
-                alt="Fogão Atlas 4 Bocas Brastemp Automático com Forno Limpa Fácil" onclick="exibir_produtos()">
+                alt="Fogão Atlas 4 Bocas Brastemp Automático com Forno Limpa Fácil" onclick="exibir_produtos(this)">
             <br>
             <p class="descricao"> Fogão Atlas 4 Bocas Brastemp Automático com Forno Limpa Fácil </p>
             <hr>
@@ -113,7 +114,7 @@
 
         <div class="fotos_produtos" id="fogao" style="display: block;">
             <img src="./_imagens/_fogao/fogao4bocaseletro.webp" width="120px"
-                alt="Fogão Atlas 4 Bocas Eletrolux Automático com Forno Limpa Fácil" onclick="exibir_produtos()">
+                alt="Fogão Atlas 4 Bocas Eletrolux Automático com Forno Limpa Fácil" onclick="exibir_produtos(this)">
             <br>
             <p class="descricao">Fogão Atlas 4 Bocas Eletrolux Automático com Forno Limpa Fácil </p>
             <hr>
@@ -123,7 +124,7 @@
 
         <div class="fotos_produtos" id="microondas" style="display: block;">
             <img src="./_imagens/_microondas/microondaspanasonic21litros.webp" width="120px"
-                alt="Micro-ondas Panasonic NN-ST27JWRUN 21 Litros Painel Digital Porta Espelhada" onclick="exibir_produtos()">
+                alt="Micro-ondas Panasonic NN-ST27JWRUN 21 Litros Painel Digital Porta Espelhada" onclick="exibir_produtos(this)">
             <br>
             <p class="descricao">Micro-ondas Panasonic NN-ST27JWRUN 21 Litros Painel Digital Porta
                 Espelhada </p>
@@ -134,7 +135,7 @@
 
         <div class="fotos_produtos" id="microondas" style="display: block;">
             <img src="./_imagens/_microondas/microondaseletrolux27litros.webp" width="120px"
-                alt="Micro-Ondas Electrolux 27L com 55 Receitas pré-programadas no Menu Onlin" onclick="exibir_produtos()">
+                alt="Micro-Ondas Electrolux 27L com 55 Receitas pré-programadas no Menu Onlin" onclick="exibir_produtos(this)">
             <br>
             <p class="descricao">Micro-Ondas Electrolux 27L com 55 Receitas pré-programadas
             </p>
@@ -145,7 +146,7 @@
 
         <div class="fotos_produtos" id="microondas" style="display: block;">
             <img src="./_imagens/_microondas/microondaseletrolux20litros.webp" width="120px"
-                alt="Micro-ondas Electrolux 20 Litros com 10 Níveis de Potência" onclick="exibir_produtos()">
+                alt="Micro-ondas Electrolux 20 Litros com 10 Níveis de Potência" onclick="exibir_produtos(this)">
             <br>
             <p class="descricao">Micro-ondas Electrolux 20 Litros com 10 Níveis de Potência - MTD30 </p>
             <hr>
@@ -156,7 +157,7 @@
 
         <div class="fotos_produtos" id="lavaroupas" style="display: block;">
             <img src="./_imagens/_lavaroupa/lavaroupaphilco12kg.webp" width="120px"
-                alt="Lavadora Philco PLR12B 12KG - 110V - Preço Promocional " onclick="exibir_produtos()">
+                alt="Lavadora Philco PLR12B 12KG - 110V - Preço Promocional " onclick="exibir_produtos(this)">
             <br>
             <p class="descricao">Lavadora Philco PLR12B 12KG - 110V - Preço Promocional </p>
             <hr>
@@ -166,7 +167,7 @@
 
         <div class="fotos_produtos" id="lavaroupas" style="display: block;">
             <img src="./_imagens/_lavaroupa/lavaroupaeletrolux11kg.webp" width="120px"
-                alt="Lavadora de Roupas Electrolux 11Kg LES11 Essencial Care – Branca " onclick="exibir_produtos()">
+                alt="Lavadora de Roupas Electrolux 11Kg LES11 Essencial Care – Branca " onclick="exibir_produtos(this)">
             <br>
             <p class="descricao">Lavadora de Roupas Electrolux 11Kg LES11 Essencial Care – Branca </p>
             <hr>
@@ -177,7 +178,7 @@
 
         <div class="fotos_produtos" id="lavaloucas" style="display: block;">
             <img src="./_imagens/_lavalouca/lavaloucaeletrolux14funcoes.webp" width="120px"
-                alt="Lava-Louças Electrolux LV14X 14Serviços com Display Digital - Inox " onclick="exibir_produtos()">
+                alt="Lava-Louças Electrolux LV14X 14Serviços com Display Digital - Inox " onclick="exibir_produtos(this)">
             <br>
             <p class="descricao">Lava-Louças Electrolux LV14X 14Serviços com Display Digital - Inox </p>
             <hr>
@@ -188,7 +189,7 @@
 
         <div class="fotos_produtos" id="lavaloucas" style="display: block;">
             <img src="./_imagens/_lavalouca/lavalouca8funcoes.webp" width="120px"
-                alt="Lava-louças Brastemp BLF08AS Ative! 8 Serviços " onclick="exibir_produtos()">
+                alt="Lava-louças Brastemp BLF08AS Ative! 8 Serviços " onclick="exibir_produtos(this)">
             <br>
             <p class="descricao">Lava-louças Brastemp BLF08AS Ative! 8 Serviços </p>
             <hr>
@@ -198,7 +199,7 @@
 
         <div class="fotos_produtos" id="lavaloucas" style="display: block;">
             <img src="./_imagens/_lavalouca/lavaloucaeletrolux10funcoes.webp" width="120px"
-                alt="Lava-Louças Electrolux LV10X 10Serviços com Display Digital " onclick="exibir_produtos()">
+                alt="Lava-Louças Electrolux LV10X 10Serviços com Display Digital " onclick="exibir_produtos(this)">
             <br>
             <p class="descricao">Lava-Louças Electrolux LV10X 10Serviços com Display Digital </p>
             <hr>
